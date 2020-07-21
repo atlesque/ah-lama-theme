@@ -1,0 +1,13 @@
+.quote {
+  quotes: "“" "”" "‘" "’";
+
+  @apply text-theme-gray;
+
+  &::before {
+    content: open-quote;
+  }
+
+  &::after {
+    content: close-quote;
+  }
+}

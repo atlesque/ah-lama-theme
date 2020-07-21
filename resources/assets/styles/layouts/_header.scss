@@ -1,0 +1,22 @@
+.header {
+  .quote {
+    position: relative;
+    bottom: -1rem;
+  }
+
+  .nav {
+    @apply flex;
+    @apply flex-wrap;
+
+    .menu-item {
+      @apply inline-block;
+      @apply px-4;
+      @apply py-2;
+      @apply border-none;
+
+      a {
+        @apply text-black;
+      }
+    }
+  }
+}

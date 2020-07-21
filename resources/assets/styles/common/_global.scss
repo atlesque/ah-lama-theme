@@ -1,0 +1,9 @@
+a {
+  @apply no-underline;
+  @apply text-theme-red;
+
+  &:hover {
+    @apply border-b-2;
+    @apply border-theme-red;
+  }
+}

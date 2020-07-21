@@ -1,0 +1,23 @@
+.sidebar {
+  ul {
+    @apply list-inside;
+    @apply list-disc;
+  }
+
+  li {
+    @apply py-2;
+
+    &:not(:last-of-type) {
+      @apply border-solid;
+      @apply border-b;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-top: 0;
+  }
+}

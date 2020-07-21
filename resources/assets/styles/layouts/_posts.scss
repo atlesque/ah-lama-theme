@@ -1,0 +1,20 @@
+.post {
+  .wp-block-image {
+    img {
+      @apply mx-auto;
+    }
+  }
+
+  .wp-block-embed__wrapper {
+    @apply relative;
+
+    padding-bottom: 56.25%;
+
+    iframe {
+      @apply mx-auto;
+      @apply absolute;
+      @apply w-full;
+      @apply h-full;
+    }
+  }
+}

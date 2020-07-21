@@ -1,0 +1,13 @@
+.page {
+  .content {
+    h1,
+    h2 {
+      @apply block;
+      @apply border-theme-red;
+      @apply border-solid;
+      @apply border-b-4;
+      @apply pb-2;
+      @apply text-theme-yellow;
+    }
+  }
+}

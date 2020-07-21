@@ -1,0 +1,18 @@
+.footer {
+  .widget_text {
+    @apply pb-8;
+
+    h3 {
+      margin-top: 0;
+    }
+
+    a {
+      @apply text-white;
+
+      &:hover,
+      &:active {
+        @apply border-white;
+      }
+    }
+  }
+}
