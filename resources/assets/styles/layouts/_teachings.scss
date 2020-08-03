@@ -1,0 +1,14 @@
+.teaching {
+  .youtube-video-wrapper {
+    @apply relative;
+
+    padding-bottom: 56.25%; // HACK: Retains 16:9 aspect ratio of video container
+
+    iframe {
+      @apply mx-auto;
+      @apply absolute;
+      @apply w-full;
+      @apply h-full;
+    }
+  }
+}
