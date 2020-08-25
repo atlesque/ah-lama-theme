@@ -1,4 +1,11 @@
 @php
+  $params = array(
+    'limit'   => -1  // Return all rows
+  );
+  $quote = pods('quote', $params);
+  $allQuotes = $quote->fetch();
+@endphp
+@php
   // TODO: Replace hardcoded quotes with data from Pods
   $availableQuotes[] = [
       'quote' =>  "Ah, to my own essence, the guru<br>
@@ -20,7 +27,10 @@
         <img src="@asset('images/logos/logotype_ah_lama_final.png')" alt="Ah-Lama" class="w-48 max-w-sm lg:w-full">
       </a>
     <p class="hidden pl-2 mb-0 text-sm text-right quote md:block">{!! $selectedQuote['quote'] !!}</p>
-    </div>
+  {{-- @while($quote->fetch())
+  <div class="hidden pl-2 mb-0 text-sm text-right quote md:block">{!! $quote->display('quote') !!}</div>
+  @endwhile --}}  
+  </div>
     <nav class="border-t border-solid">
       @if (has_nav_menu('primary_navigation'))
       {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
@@ -37,6 +47,9 @@
   </div>
   <div class="flex items-center justify-end w-4/12 px-4 md:px-10 md:w-3/12">
     <img src="@asset($selectedQuote['image'])" alt="Lama Achuk Rinpoche" class="w-40 rounded-full min-w-12 min-h-12">
+    {{-- @foreach($allQuotes as $quotes=>$quote)
+      <pre>{{ print_r($quote) }}</pre>
+    @endforeach --}}
   </div>
 </header>
 

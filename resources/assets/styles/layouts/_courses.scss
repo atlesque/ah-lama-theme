@@ -1,0 +1,23 @@
+.single-course,
+.single-chapter {
+  a {
+    @apply no-underline;
+  }
+}
+
+.single-course {
+  .chapter-list {
+    li::before {
+      content: none;
+    }
+  }
+}
+
+.single-chapter {
+  .post-navigation a {
+    @apply px-2;
+    @apply py-1;
+    @apply border;
+    @apply border-theme-red;
+  }
+}

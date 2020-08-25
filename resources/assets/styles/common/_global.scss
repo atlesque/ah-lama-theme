@@ -7,3 +7,9 @@ a {
     @apply border-theme-red;
   }
 }
+
+figcaption {
+  @apply text-sm;
+  @apply text-center;
+  @apply text-theme-yellow;
+}
