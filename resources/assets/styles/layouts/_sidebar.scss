@@ -20,4 +20,18 @@
   h5 {
     margin-top: 0;
   }
+
+  section {
+    &:not(:last-of-type) {
+      @apply pb-4;
+    }
+
+    @screen lg {
+      @apply pr-8;
+    }
+
+    @screen xl {
+      @apply pr-0;
+    }
+  }
 }

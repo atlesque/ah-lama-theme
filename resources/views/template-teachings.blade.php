@@ -15,7 +15,8 @@
   @endwhile
   @php
     $params = array(
-			'limit'   => -1  // Return all rows
+      'limit'   => -1,
+      'orderby' => 'name ASC'  // Return all rows
 		);
     $teaching = pods('teaching', $params);
   @endphp
@@ -23,7 +24,7 @@
     <div class="teaching">
       <h2 class="block lg:w-2/4">{{ $teaching->display('name') }}</h2>
       <div class="flex flex-col-reverse lg:flex-row">
-        <div class="{{ empty($teaching->display('youtube_embed_code')) === false ? 'lg:w-2/4' : '' }}">
+        <div class="{{ empty($teaching->display('youtube_embed_code')) === false || empty($teaching->display('spotify_link')) === false ? 'lg:w-2/4' : '' }}">
           <div class="description">{!! $teaching->display('description') !!}</div>
           @if(empty($teaching->field('attachments')) === false)
             <h3>Attachments</h3>
@@ -55,6 +56,12 @@
               <span>button next to the video title.</span>
             </div>
             @endif
+          </div>
+        @elseif(empty($teaching->display('spotify_link')) === false)
+          <div class="mb-4 lg:w-2/4 lg:pl-8">
+            <div class="spotify-wrapper">
+              {!! $teaching->display('spotify_link') !!}
+            </div>
           </div>
         @endif
       </div>
