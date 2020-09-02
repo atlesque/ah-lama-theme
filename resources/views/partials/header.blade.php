@@ -42,6 +42,10 @@
       'menu_class'      => 'navbar-nav mr-auto',
       'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
       'walker'          => new WP_Bootstrap_Navwalker(),]) !!} --}}
+      {{-- {!! wp_nav_menu(['theme_location' => 'primary_navigation',
+      'depth'           => 2,
+      'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+      'walker'          => new WP_Bootstrap_Navwalker(),]) !!} --}}
       @endif
     </nav>
   </div>
