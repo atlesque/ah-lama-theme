@@ -5,6 +5,7 @@ namespace App;
 use Roots\Sage\Container;
 
 require_once 'Controllers/wp-bootstrap-navwalker.php';
+require_once 'Controllers/TailwindNavwalker.php';
 
 /**
  * Get the sage container.

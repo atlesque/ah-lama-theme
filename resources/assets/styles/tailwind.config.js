@@ -656,4 +656,7 @@ module.exports = {
   },
   corePlugins: {},
   plugins: [require("@tailwindcss/ui"), require("@tailwindcss/typography")],
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
 };
