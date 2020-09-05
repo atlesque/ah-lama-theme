@@ -8,12 +8,25 @@ a {
   }
 }
 
-.prose a {
-  text-decoration: none !important;
+.prose {
+  a {
+    text-decoration: none !important;
 
-  &:hover,
-  &:active {
-    text-decoration: none;
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+
+.wp-block-latest-posts {
+  li {
+    @apply mb-6;
+
+    & > a {
+      @apply text-lg;
+      @apply font-bold;
+    }
   }
 }
 

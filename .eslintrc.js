@@ -31,5 +31,6 @@ module.exports = {
   },
   rules: {
     "no-console": 0,
+    "no-descending-specificity": " off",
   },
 };
