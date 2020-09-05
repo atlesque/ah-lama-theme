@@ -8,6 +8,15 @@ a {
   }
 }
 
+.prose a {
+  text-decoration: none !important;
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
 figcaption {
   @apply text-sm;
   @apply text-center;

@@ -1,7 +1,4 @@
 module.exports = {
-  purge: {
-    whitelistPatternsChildren: [/prose$/],
-  },
   target: "relaxed",
   prefix: "",
   important: false,
