@@ -35,3 +35,27 @@ figcaption {
   @apply text-center;
   @apply text-theme-yellow;
 }
+
+.wp-audio-shortcode {
+  @apply mb-4;
+}
+
+blockquote {
+  font-weight: 500;
+  font-style: italic;
+  color: #1a202c;
+  border-left-width: 0.25rem;
+  border-left-color: #e2e8f0;
+  quotes: "\201C""\201D""\2018""\2019";
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  padding-left: 1em;
+
+  p:first-of-type::before {
+    content: open-quote;
+  }
+
+  p:last-of-type::after {
+    content: close-quote;
+  }
+}

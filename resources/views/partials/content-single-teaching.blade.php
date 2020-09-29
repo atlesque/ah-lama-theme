@@ -4,7 +4,7 @@
         <h1 class="mb-6">{{ $teaching->display('name') }}</h1>
         <div class="flex flex-col-reverse lg:flex-row">
             <div class="{{ empty($teaching->display('youtube_embed_code')) === false || empty($teaching->display('spotify_link')) === false ? 'lg:w-2/4' : '' }}">
-            <div class="prose lg:prose-lg xl:prose-xl description">{!! $teaching->display('description') !!}</div>
+            <div class="description">{!! $teaching->display('description') !!}</div>
             @if(empty($teaching->field('attachments')) === false)
                 <h3>Attachments</h3>
                 {{-- <pre>@php echo print_r($teaching->raw('attachments')) @endphp</pre> --}}

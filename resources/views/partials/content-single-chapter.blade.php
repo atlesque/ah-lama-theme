@@ -1,5 +1,5 @@
 <article @php post_class() @endphp>
-    <div class="prose entry-content sm:prose lg:prose-lg xl:prose-xl">
+    <div class="entry-content">
         @php the_content() @endphp
     </div>
     <nav class="flex justify-between mt-4 post-navigation">
