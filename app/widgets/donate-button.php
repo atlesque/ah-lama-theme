@@ -22,7 +22,7 @@ class DonateButton extends \WP_Widget
         }
 ?>
         <section class="flex items-center h-full md:justify-end">
-            <a href="/support" class="px-4 py-1 font-serif text-2xl text-white border-2 border-white border-solid hover:underline hover:border-white"><?= __('Support', 'donate_button_domain'); ?></a>
+            <a href="/support" class="px-4 py-1 font-serif text-2xl text-white border-2 border-white border-solid hover:underline hover:border-white"><?= __('Support us', 'donate_button_domain'); ?></a>
         </section>
     <?php
         //echo $args['after_widget'];
