@@ -33,4 +33,12 @@
       @apply pr-0;
     }
   }
+
+  .fb-page-embed {
+    @apply hidden;
+
+    @screen md {
+      @apply block;
+    }
+  }
 }
