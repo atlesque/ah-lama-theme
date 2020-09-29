@@ -17,7 +17,13 @@
 
 .single-chapter {
   .content {
-    max-width: 65ch;
+    p,
+    .wp-audio-shortcode,
+    blockquote,
+    ul,
+    ol {
+      max-width: 65ch;
+    }
 
     h1 {
       @apply block;
