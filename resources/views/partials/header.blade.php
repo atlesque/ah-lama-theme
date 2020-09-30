@@ -22,7 +22,7 @@
   $selectedQuote = $availableQuotes[array_rand($availableQuotes)];
 @endphp
 
-<header id="nav-header" class="sticky top-0 z-50 max-h-screen pt-4 overflow-auto transition-shadow duration-300 bg-white lg:relative lg:pt-10 overscroll-contain">
+<header id="nav-header" class="sticky top-0 z-50 max-h-screen pt-4 overflow-auto transition-shadow duration-300 bg-white lg:overflow-visible lg:pt-10 overscroll-contain">
   <div class="container flex mx-auto header">
     <div class="flex flex-col flex-1">
       <div class="flex items-end justify-between px-4 mb-4 lg:mb-10 lg:pl-10">

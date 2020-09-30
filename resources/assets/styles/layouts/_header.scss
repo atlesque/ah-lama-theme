@@ -26,14 +26,49 @@
       }
     }
 
+    .menu-item-has-children {
+      @apply relative;
+
+      &:hover {
+        .dropdown-menu {
+          @apply block;
+        }
+      }
+    }
+
     .dropdown-menu {
+      @screen lg {
+        @apply hidden;
+        @apply absolute;
+        @apply left-0;
+        @apply bg-white;
+        @apply shadow-lg;
+        @apply mt-2;
+        @apply whitespace-no-wrap;
+        @apply rounded;
+
+        // box-shadow: inset 0 0 0 3px theme("colors.theme.red");
+      }
+
       .menu-item {
-        &::before {
-          content: "- ";
+        @screen lg {
+          @apply py-4;
+        }
+
+        &:not(:last-of-type) {
+          @screen lg {
+            @apply border-solid;
+            @apply border-b;
+            @apply border-theme-red;
+          }
         }
 
         &:last-of-type {
           @apply pb-0;
+
+          @screen lg {
+            @apply pb-4;
+          }
         }
       }
     }
