@@ -41,4 +41,19 @@
       @apply block;
     }
   }
+
+  .rpwwt-widget {
+    .rpwwt-post-title {
+      @apply font-bold;
+    }
+
+    .rpwwt-post-date {
+      @apply text-gray-500;
+      @apply text-sm;
+    }
+
+    .rpwwt-post-excerpt {
+      @apply pl-2;
+    }
+  }
 }
