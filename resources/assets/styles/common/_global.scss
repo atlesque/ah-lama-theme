@@ -59,3 +59,17 @@ blockquote {
     content: close-quote;
   }
 }
+
+input {
+  &[type="password"] {
+    @apply form-input;
+  }
+
+  &[type="submit"] {
+    @apply bg-theme-red;
+    @apply text-white;
+    @apply py-2;
+    @apply px-4;
+    @apply rounded;
+  }
+}
