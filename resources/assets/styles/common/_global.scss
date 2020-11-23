@@ -73,3 +73,12 @@ input {
     @apply rounded;
   }
 }
+
+.aligncenter {
+  @apply text-center;
+  @apply mx-auto;
+
+  iframe {
+    @apply mx-auto;
+  }
+}
