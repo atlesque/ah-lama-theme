@@ -82,3 +82,16 @@ input {
     @apply mx-auto;
   }
 }
+
+.mce-content-body,
+.single-chapter .entry-content {
+  ul:not(.list-none) {
+    @apply list-disc;
+    @apply list-inside;
+  }
+
+  ol:not(.list-none) {
+    @apply list-decimal;
+    @apply list-inside;
+  }
+}
