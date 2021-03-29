@@ -32,6 +32,7 @@
       &:hover {
         .dropdown-menu {
           @apply block;
+          @apply z-10;
         }
       }
     }
